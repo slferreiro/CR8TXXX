@@ -1,0 +1,32 @@
+CR8TXXX: manage your Mixxx library and crates, and find damaged music files
+(Apple silicon Macs, macOS 13 or later)
+
+INSTALL
+1. Drag CR8TXXX onto the Applications folder in this window.
+2. Open CR8TXXX from Applications.
+
+   The first time, macOS may say it "can't check CR8TXXX for malicious software"
+   (it is signed by its developer but not yet notarized by Apple). Then:
+     - click Done (or OK),
+     - open System Settings > Privacy & Security, scroll down to
+       "CR8TXXX was blocked..." and click Open Anyway,
+     - confirm with your password or Touch ID.
+   This is needed only once.
+
+FIRST RUN: "Set Up CR8TXXX"
+A setup window checks what this Mac needs and asks before changing anything:
+- Mixxx library: open Mixxx at least once first, with your music folder added in
+  Mixxx > Preferences > Library. macOS protects Mixxx's library, so setup has a button
+  that opens System Settings > Privacy & Security > Full Disk Access: turn on CR8TXXX,
+  then quit and reopen CR8TXXX.
+- ffmpeg (used to check files other than MP3): if it isn't on this Mac, click
+  Download & Install. It goes into CR8TXXX's own folder (no password needed, about 80 MB,
+  needs the internet once). Without it, the damaged-file scan still checks MP3s.
+Setup can be opened again any time: Help > Set Up CR8TXXX...
+
+GOOD TO KNOW
+- Changes are only made while Mixxx is closed; an orange banner says so while it's open.
+- Before the first change of each session, CR8TXXX saves a backup copy of Mixxx's library
+  (File > Show Backups in Finder).
+- To remove CR8TXXX: drag it to the Trash, and delete the folder
+  ~/Library/Application Support/CR8TXXX (backups, scan results, ffmpeg).
