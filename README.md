@@ -4,7 +4,7 @@
 
 A Mac app for managing a [Mixxx](https://mixxx.org) DJ library from outside Mixxx: build and
 edit **crates** by drag and drop, tidy the library, and **find damaged music files** before
-they play twice in the middle of a set.
+they break in the middle of a set.
 
 CR8TXXX works directly on the library database Mixxx keeps (`mixxxdb.sqlite`), so crates and
 changes made here show up in Mixxx the next time it opens.
